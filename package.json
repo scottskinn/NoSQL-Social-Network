@@ -19,7 +19,6 @@
   "homepage": "https://github.com/scottskinn/NoSQL-Social-Network#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^6.0.6",
-    "router": "^1.3.5"
+    "mongoose": "^6.0.6"
   }
 }
