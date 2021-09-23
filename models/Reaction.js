@@ -1,4 +1,5 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model, Types } = require('mongoose');
+// const router = require('express').Router();
 
 const ReactionSchema = new Schema(
     {
@@ -26,4 +27,8 @@ const ReactionSchema = new Schema(
             getters: true
         }
     }
-)
+);
+
+const Reaction = model('Reaction', ReactionSchema);
+
+model.exports = Reaction;

@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-
+// const router = require('express').Router();
 
 const UserSchema = new Schema (
     {
@@ -13,7 +13,7 @@ const UserSchema = new Schema (
             type: String,
             unique: true,
             required: true,
-            validate: [validateEmail, 'Please enter a valid email'],
+            // validate: [validateEmail, 'Please enter a valid email'],
             match: [/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/, 'Please enter a valid email']
         },
         thoughts: {
