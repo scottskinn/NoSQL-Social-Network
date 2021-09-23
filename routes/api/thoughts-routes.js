@@ -19,3 +19,12 @@ router
 // /api/thoughts/<userId>/<thoughtId>/<replyId>
 router.route('/:userId/:thoughtId/:replyId').delete(deleteThought);
 
+module.exports = router;
+
+
+// example data
+// {
+//   "thoughtText": "Here's a cool thought...",
+//   "username": "lernantino",
+//   "userId": "5edff358a0fcb779aa7b118b"
+// }
