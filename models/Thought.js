@@ -19,10 +19,11 @@ const ThoughtSchema = new Schema(
             type: String,
             required: true
         },
-        reactions: {
-            // Array of nested documents created with the reactionSchema
+         // Array of nested documents created with the reactionSchema
             // these are like replies
-        }
+        reactions: [
+            
+        ]
     },
     {
         toJSON: {
@@ -43,4 +44,4 @@ ThoughtSchema.virtual('reactionCount').get(function() {
 
 const Thought = model('Thought', ThoughtSchema);
 
-model.exports = Thought;
+module.exports = Thought;

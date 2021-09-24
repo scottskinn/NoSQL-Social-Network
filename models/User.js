@@ -16,12 +16,20 @@ const UserSchema = new Schema (
             // validate: [validateEmail, 'Please enter a valid email'],
             match: [/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/, 'Please enter a valid email']
         },
-        thoughts: {
+        thoughts: [
             // Array of _id values referencing the Thought model
-        },
-        friends: {
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'Thought'
+            }
+
+        ],
+        friends: [
             // Array of _id values referencing the User model (self-reference)
-        }
+            {      type: Schema.Types.ObjectId,
+                ref: 'User'
+            }
+        ]
     },
     {
         toJSON: {
