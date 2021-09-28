@@ -12,7 +12,9 @@
  
   ## Description:
 
-    AS A social media startup, I WANT an API for my social network that uses a NoSQL database, SO THAT my website can handle large amounts of unstructured data.
+    AS A social media startup,
+    I WANT an API for my social network that uses a NoSQL database,
+    SO THAT my website can handle large amounts of unstructured data.
 
 ## Installation:
     Copy the SSH key from github and run npm start from the command line.
