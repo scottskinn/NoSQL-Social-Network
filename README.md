@@ -18,7 +18,8 @@
     Copy the SSH key from github and run npm start from the command line.
 
   ## Usage:
-      pics
+      Start the sever:
+![nosql-npm start](https://user-images.githubusercontent.com/84105761/135123548-45c6069f-f406-423d-9388-be8773bb8551.jpg)
 
   ## Questions:
   
